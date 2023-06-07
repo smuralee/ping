@@ -12,6 +12,12 @@ on:
 jobs:
 
   build:
+    env:
+      GOPROXY: direct
+      GO111MODULE: on
+      GOARCH: amd64
+      GOOS: linux
+      CGO_ENABLED: 0
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
