@@ -5,7 +5,7 @@ Container image for testing purpose. Returns the client IP address and status me
 ## Build and run the container
 
 ```shell
-docker built -t ping .
+docker build -t ping .
 docker run -p 8080:8080 ping
 ```
 
