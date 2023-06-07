@@ -15,7 +15,7 @@ ENV GOOS=linux
 ENV CGO_ENABLED=0
 
 # Copy the Go Modules manifests
-COPY --chown=alpha:alpha go.mod go.sum ./
+COPY --chown=alpha:alpha go.* ./
 
 # Cache deps before building and copying source so that we don't need to re-download as much
 # and so that source changes don't invalidate our downloaded layer
