@@ -1,3 +1,3 @@
 module github.com/smuralee/ping
 
-go 1.20
+go 1.19
